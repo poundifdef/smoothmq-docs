@@ -7,5 +7,5 @@ From there, add the `--endpoint-url` to any CLI command. For example,
 to list queues, run:
 
 ```
-$ aws sqs list-queues --endpoint-url http://localhost:3001
+$ aws sqs list-queues --endpoint-url http://localhost:8080
 ```
