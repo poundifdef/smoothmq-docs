@@ -1,17 +1,39 @@
-# Welcome to MkDocs
+# Getting Started
 
-For full documentation visit [mkdocs.org](https://www.mkdocs.org).
+## Install
 
-## Commands
+Download SmoothMQ from GitHub 
 
-* `mkdocs new [dir-name]` - Create a new project.
-* `mkdocs serve` - Start the live-reloading docs server.
-* `mkdocs build` - Build the documentation site.
-* `mkdocs -h` - Print help message and exit.
+``` bash
+$ git clone https://github.com/poundifdef/smoothmq.git
+```
 
-## Project layout
+## Run
 
-    mkdocs.yml    # The configuration file.
-    docs/
-        index.md  # The documentation homepage.
-        ...       # Other markdown pages, images and other files.
+To run the server, run:
+
+``` bash
+$ go run . server
+```
+
+This will run the SmoothMQ server on port `:8080`. The default SQS credentials are
+`DEV_ACCESS_KEY_ID` / `DEV_SECRET_ACCESS_KEY`
+
+### Dashboard
+The dashboard is available at http://localhost:8080
+
+### SQS
+The SQS API endpoint is http://localhost:8080/sqs
+
+You can connect to it using any SQS-compatible library. Here's an example for how to connect
+using Python:
+
+``` py
+import boto3
+
+sqs = boto3.client("sqs", endpoint_url="http://localhost:3001")
+```
+
+### Metrics
+
+Prometheus metrics are available at http://localhost:8080/metrics
