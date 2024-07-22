@@ -1,6 +1,6 @@
 # Python
 
-## Boto
+## Boto3
 
 ``` py
 import boto3
