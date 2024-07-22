@@ -2,23 +2,14 @@
 
 SmoothMQ deploys as a single binary. Here are configurations for common cases.
 
+It is important that only 1 machine is provisioned. Everything else 
+(volume size, server size) can be tweaked.
+
 ## Fly.io
 
-Copy the following fly.toml and run `fly launch`
+Copy the following and run `fly launch`
 
-``` toml
-# This is a default configuration to launch on fly.io. It does the following:
-#
-# 1. Provisions a single machine as the message queue. 
-# 2. Creates a 1 GB volume to store data (such as queue messages)
-# 3. Exposes the following endpoints:
-#       Dashboard: https://your-app.fly.dev/
-#       SQS Endpoint: https://your-app.fly.dev/sqs
-#       Prometheus metrics: https://your-app.fly.dev/metrics
-#
-# It is important that only 1 machine is provisioned. Everything else 
-# (volume size, server size) can be tweaked.
-
+``` toml title="fly.toml"
 [build]
 
 [env]
@@ -50,9 +41,9 @@ Copy the following fly.toml and run `fly launch`
 
 ## Render.com
 
-Here is a `render.yaml` blueprint:
+Here is a Render blueprint:
 
-``` yaml
+``` yaml title="render.yaml"
 services:
   - type: web
     runtime: docker
