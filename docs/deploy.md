@@ -48,6 +48,9 @@ kick off a deployment:
 https://app.koyeb.com/deploy?name=smoothmq&type=git&builder=dockerfile&repository=github.com/poundifdef/smoothmq&branch=main&ports=8080;http;/&env[Q_SERVER_USE_SINGLE_PORT]=true
 ```
 
+## Railway.app
+
+There is a Railway template to automatically deploy: https://railway.app/template/AJv-64
 
 ## Render.com
 
