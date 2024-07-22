@@ -14,7 +14,7 @@ import (
 func main() {
     cfg, err := config.LoadDefaultConfig(context.TODO())
     sqsClient := sqs.NewFromConfig(cfg, func(o *sqs.Options) {
-        o.BaseEndpoint = aws.String("http://localhost:8080")
+        o.BaseEndpoint = aws.String("http://localhost:3001")
     })
 }
 
