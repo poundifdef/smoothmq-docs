@@ -9,6 +9,9 @@ sqs = boto3.client("sqs", endpoint_url="http://localhost:3001")
 ```
 ## Celery
 
+One note about Celery: the endpoint_url must be `/`. You cannot run the SQS endpoint
+on a different path (such as `localhost:3001/sqs`).
+
 ``` py
 from celery import Celery
 

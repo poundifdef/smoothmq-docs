@@ -39,6 +39,16 @@ Copy the following and run `fly launch`
   path = '/metrics'
 ```
 
+## Koyeb.com
+
+Koyeb supports "one-click" deploys from git repositories. The following URL will
+kick off a deployment:
+
+```
+https://app.koyeb.com/deploy?name=smoothmq&type=git&builder=dockerfile&repository=github.com/poundifdef/smoothmq&branch=main&ports=8080;http;/&env[Q_SERVER_USE_SINGLE_PORT]=true
+```
+
+
 ## Render.com
 
 Here is a Render blueprint:
