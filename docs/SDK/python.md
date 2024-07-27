@@ -20,3 +20,9 @@ app = Celery(
     broker_url="sqs://DEV_ACCESS_KEY_ID:DEV_SECRET_ACCESS_KEY@localhost:3001",
 )
 ```
+
+SmoothMQ has special support for Celery. If it detects a Celery task, it will extract the
+Celery task ID and task type as metadata. This means you can search for a specific ID or
+task type.
+
+[![Celery task in SmoothMQ](celery.png)](celery.png)
