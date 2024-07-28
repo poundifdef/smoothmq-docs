@@ -7,6 +7,7 @@ nav:
 #   - configuration.md
 theme:
   name: material
+  custom_dir: overrides
   palette:
     primary: black
   font:
@@ -32,3 +33,5 @@ markdown_extensions:
   - pymdownx.tabbed:
       alternate_style: true
   - markdown_grid_tables
+# extra_javascript:
+  # - <script defer data-domain="docs.smoothmq.com" src="https://plausible.io/js/script.js"></script>

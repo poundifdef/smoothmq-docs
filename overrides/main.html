@@ -1,0 +1,9 @@
+{% extends "base.html" %}
+
+{% block libs %}
+  <!-- Add scripts that need to run before here -->
+  {{ super() }}
+
+  <script defer data-domain="docs.smoothmq.com" src="https://plausible.io/js/script.js"></script>
+  <!-- Add scripts that need to run afterwards here -->
+{% endblock %}
