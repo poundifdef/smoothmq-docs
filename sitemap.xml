@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+    <url>
+         <loc>https://docs.smoothmq.com/</loc>
+         <lastmod>2024-07-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://docs.smoothmq.com/configuration/</loc>
+         <lastmod>2024-07-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://docs.smoothmq.com/deploy/</loc>
+         <lastmod>2024-07-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://docs.smoothmq.com/SDK/cli/</loc>
+         <lastmod>2024-07-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://docs.smoothmq.com/SDK/go/</loc>
+         <lastmod>2024-07-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://docs.smoothmq.com/SDK/python/</loc>
+         <lastmod>2024-07-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+</urlset>
